@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="/lab10/modal.css">
+    <link rel="stylesheet" href="/lab10/buttons.css">
+</head>
+
+<body>
+<div>
+    <button class="blue-button"> Create </button> 
+</div>
+
+<div class="modal-form">
+    <div class="modal-window">
+    <label class="title"> Cup options </label>
+    <button class="gray-button">X</button>
+    <div class="line"></div>
+        <label><br>Cup name:</label><br>
+    <input type="text" class="modal-form-field" placeholder="Input cups name..."/><br><br>
+    <label>Cup volume :</label><br>
+    <input type="number" min="10" max="1000" class="modal-form-field" placeholder="Input cups volume (ml) between 10 & 1000"/><br><br>
+    <label>Cup material:</label><br>
+    <select class="modal-form-field">
+        <option value="Glass">Glass</option>
+        <option value="Porcelain">Porcelain</option>
+        <option value="Paper">Paper</option>
+        <option value="Plastic">Plastic</option>
+        <option value="Metal">Metal</option>
+        <option value="Silicone">Silicone</option>
+    </select><br><br>
+    <div id= "img-prev-section">
+        <img id="imgprev" src="" >
+    </div>   
+        <label for="file">Select image file:</label><br>
+        <input type="file"><br><br>
+    
+    <button class="blue-button">Confirm</button>
+    </div>
+    <div class="overlay"></div>
+</div> 
+
+</body>
+</html>
